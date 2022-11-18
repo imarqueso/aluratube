@@ -61,6 +61,7 @@ const StyledBanner = styled.div`
   background-image: url(${({ bg }) => bg});
   /* background-image: url(${config.bg}); */
   height: 230px;
+  background-size: cover;
 `;
 function Header() {
   return (
