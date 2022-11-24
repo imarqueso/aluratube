@@ -73,6 +73,18 @@ export const StyledTimeline = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
   }
+
+  .canais-content::-webkit-scrollbar-track {
+    background-color: #202020;
+  }
+  .canais-content::-webkit-scrollbar {
+    height: 8px;
+    background: #202020;
+  }
+  .canais-content::-webkit-scrollbar-thumb {
+    background: #404040;
+  }
+
   .canal-card {
     width: auto;
     height: auto;
