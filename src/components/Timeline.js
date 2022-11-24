@@ -68,7 +68,7 @@ export const StyledTimeline = styled.div`
   .canais-content {
     width: 100%;
     overflow-x: scroll;
-    padding: 16px;
+    padding: 16px 0px 16px 0px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -81,17 +81,17 @@ export const StyledTimeline = styled.div`
     justify-content: flex-start;
     align-items: center;
     position: relative;
+    margin-right: 20px;
   }
   .canal-card a {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     padding: 0px;
     margin: 0px;
-    margin-right: 15px;
     margin-bottom: 15px;
     overflow: hidden;
   }
@@ -99,5 +99,17 @@ export const StyledTimeline = styled.div`
     width: 105%;
     height: auto;
     margin: 0px;
+  }
+
+  .canal-card span {
+    font-size: 14px;
+    text-align: center;
+    color: ${({ theme }) => theme.textColorBase || "#222222"};
+  }
+
+  @media (max-width: 470px) {
+    .timeline div {
+      width: calc(100vw - -115px);
+    }
   }
 `;

@@ -129,6 +129,7 @@ function Timeline({ searchValue, ...propriedades }) {
                     <a href={youtube.url}>
                       <img src={youtube.foto} />
                     </a>
+                    <span>{youtube.nome}</span>
                   </div>
                 );
               })}
