@@ -23,7 +23,7 @@ export const StyledTimeline = styled.div`
   .barra::-webkit-scrollbar-thumb {
     background: #404040;
   }
-  img {
+  .timeline img {
     aspect-ratio: 16/9;
     font-weight: 500;
     object-fit: cover;
@@ -31,7 +31,7 @@ export const StyledTimeline = styled.div`
     max-width: 210px;
     height: auto;
   }
-  section {
+  .timeline {
     width: 100%;
     padding: 0;
     overflow: hidden;
@@ -55,5 +55,49 @@ export const StyledTimeline = styled.div`
         }
       }
     }
+  }
+  .canais {
+    width: 100%;
+    overflow: hidden;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .canais-content {
+    width: 100%;
+    overflow-x: scroll;
+    padding: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .canal-card {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+  }
+  .canal-card a {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+  }
+  .canal-card img {
+    width: 105%;
+    height: auto;
+    margin: 0px;
   }
 `;

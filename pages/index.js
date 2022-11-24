@@ -23,7 +23,11 @@ function HomePage() {
           setValorDoFiltro={setValorDoFiltro}
         />
         <Header />
-        <Timeline searchValue={valorDoFiltro} playlists={config.playlists}>
+        <Timeline
+          searchValue={valorDoFiltro}
+          playlists={config.playlists}
+          canals={config.canais}
+        >
           Conteúdo
         </Timeline>
       </div>
@@ -82,6 +86,7 @@ function Header() {
 function Timeline({ searchValue, ...propriedades }) {
   // console.log("Dentro do componente", propriedades.playlists);
   const playlistNames = Object.keys(propriedades.playlists);
+  const canaisYT = Object.keys(propriedades.canals);
   // Statement
   // Retorno por expressão
   return (
@@ -91,7 +96,7 @@ function Timeline({ searchValue, ...propriedades }) {
         // console.log(playlistName);
         // console.log(videos);
         return (
-          <section key={playlistName}>
+          <section key={playlistName} className="timeline">
             <h2>{playlistName}</h2>
             <div className="barra">
               {videos
@@ -108,6 +113,25 @@ function Timeline({ searchValue, ...propriedades }) {
                     </a>
                   );
                 })}
+            </div>
+          </section>
+        );
+      })}
+      {canaisYT.map((canal) => {
+        const youtubers = propriedades.canals[canal];
+        return (
+          <section key={canal} className="canais">
+            <h2>{canal}</h2>
+            <div className="canais-content">
+              {youtubers.map((youtube) => {
+                return (
+                  <div className="canal-card" key={youtube.url}>
+                    <a href={youtube.url}>
+                      <img src={youtube.foto} />
+                    </a>
+                  </div>
+                );
+              })}
             </div>
           </section>
         );

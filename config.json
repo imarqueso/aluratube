@@ -9,7 +9,7 @@
         }
     ],
     "playlists": {
-        "programacão": [
+        "programação": [
             {
                 "title": "O que é React JS? #HipstersPontoTube",
                 "url": "https://www.youtube.com/watch?v=6IuQUgeDPg0",
@@ -71,6 +71,30 @@
                 "title": "PALIO G3 QUE A FIAT NÃO FEZ / AS RODAS MAIS PROCURADAS DA FIAT",
                 "url": "https://www.youtube.com/watch?v=pIuZ9Tv9GhU",
                 "thumb": "https://img.youtube.com/vi/pIuZ9Tv9GhU/hqdefault.jpg"
+            }
+        ]
+    },
+    "canais": {
+        "Canais Favoritos": [
+            {
+                "nome": "Alura Cursos Online",
+                "url": "https://www.youtube.com/user/aluracursosonline",
+                "foto": "https://yt3.googleusercontent.com/0Nvt3g5wWACsk_vns0HegFCnkxtAvuCn9wVaHMETrkaWkTmu1Ud-vMVnmF5_bXMfTaZYR8_s=s176-c-k-c0x00ffffff-no-rj-mo"
+            },
+            {
+                "nome": "Rocketseat",
+                "url": "https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg",
+                "foto": "https://yt3.googleusercontent.com/ytc/AMLnZu9-n9mDtKOwVMx3_-2zr8H57lHFag5t-0JcJNFPUQ=s176-c-k-c0x00ffffff-no-rj-mo"
+            },
+            {
+                "nome": "Lucas Montano",
+                "url": "https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg",
+                "foto": "https://yt3.googleusercontent.com/z0Ccoolotr1Q4F2EaCIgaR4GWLAR_VCwP25QrTica_e9XV6x8-kuQx_qnqI1mnaOkYl6KkIL=s176-c-k-c0x00ffffff-no-rj-mo"
+            },
+            {
+                "nome": "Mario Souto - Dev Soutinho",
+                "url": "https://www.youtube.com/channel/UCzR2u5RWXWjUh7CwLSvbitA",
+                "foto": "https://yt3.googleusercontent.com/m8Yrqf0Y81L4mZ1Cq7rGnJ4NDHe6729rxiFZvWyy9-xd_Z7Osmza7J8NWpN1axMHcCb1oKJNgA=s176-c-k-c0x00ffffff-no-rj-mo"
             }
         ]
     }
