@@ -3,12 +3,21 @@ import config from "../config.json";
 import styled from "styled-components";
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
+import Head from "next/head";
 
 function HomePage() {
   const [valorDoFiltro, setValorDoFiltro] = React.useState("");
 
   return (
     <>
+      <Head>
+        <title>Aluratube</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="icon"
+          href="https://www.youtube.com/s/desktop/ff71ea81/img/favicon.ico"
+        />
+      </Head>
       <div
         style={{
           display: "flex",
