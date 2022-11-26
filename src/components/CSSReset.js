@@ -18,6 +18,7 @@ export const CSSReset = createGlobalStyle`
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    overflow-x: hidden;
   }
   html::-webkit-scrollbar-track {
     background-color: #202020;
@@ -33,6 +34,7 @@ export const CSSReset = createGlobalStyle`
   body {
     display: flex;
     flex: 1;
+    overflow-x: hidden;
   }
   #__next {
     display: flex;

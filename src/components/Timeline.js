@@ -37,7 +37,8 @@ export const StyledTimeline = styled.div`
     overflow: hidden;
     padding: 16px;
     div {
-      width: calc(100vw - 16px * 4);
+      width: 95%;
+      max-width: 100vw;
       display: grid;
       grid-gap: 16px;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -57,7 +58,8 @@ export const StyledTimeline = styled.div`
     }
   }
   .canais {
-    width: 100%;
+    width: 85%;
+    max-width: 100vw;
     overflow: hidden;
     padding: 16px;
     display: flex;
@@ -67,6 +69,7 @@ export const StyledTimeline = styled.div`
   }
   .canais-content {
     width: 100%;
+    max-width: 100%;
     overflow-x: scroll;
     padding: 16px 0px 16px 0px;
     display: flex;
@@ -121,7 +124,7 @@ export const StyledTimeline = styled.div`
 
   @media (max-width: 470px) {
     .timeline div {
-      width: calc(100vw - -115px);
+      width: 85%;
     }
   }
 `;
